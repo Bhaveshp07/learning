@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <form action="">
+            <h1>Quiz</h1>
+            <span>Name: </span>
+            <input type="text" id="userName">
+            <button type="button" onclick="submitUser()">Submit</button>
+            <br>
+            <br>
+            <p><span id="showName"></span></p>
+            <div>
+                <div class="question"></div>
+                <div class="options">
+                    <ul style="list-style: none;">
+                        <li><label class="option"><input type="radio" name="answer" value="1"> <span></span></label></li>
+                        <li><label class="option"><input type="radio" name="answer" value="2"> <span></span></label></li>
+                        <li><label class="option"><input type="radio" name="answer" value="3"> <span></span></label></li>
+                        <li><label class="option"><input type="radio" name="answer" value="4"> <span></span></label></li>
+                    </ul>
+                    
+                    
+                    
+                    
+                </div>
+                <button type="button" onclick="checkAnswer()">Submit Answer</button>
+
+                <p><span id="showScore"></span></p>
+            </div>
+        </form>
+    </body>
+</html>
