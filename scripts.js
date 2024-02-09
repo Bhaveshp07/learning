@@ -3,15 +3,15 @@ console.log("the first line");
 
 
 
-function getName(usernmae) {
+function getName(username) {
     return new Promise((resolve, reject)=> {
         setTimeout(()=> {
-            resolve(`hello ${usernmae}`);
+            resolve(`hello ${username}`);
         }, 2000);
     })
 }
 // setTimeout(()=> {
-//     cb(`hello ${usernmae}`);
+//     cb(`hello ${username}`);
 // },2000);
 
 
@@ -22,13 +22,13 @@ function getName(usernmae) {
 function bookMovieTicket(movieName) {
     return new Promise((resolve, reject)=> {
         setTimeout(()=> {
-            reject(new Error(`the movie ${movieName} is succefully booked`));
+            reject(new Error(`the movie ${movieName} is successfully booked`));
         }, 1000)
     })
 }
 
 // setTimeout(()=> {
-//     cb(`the movie ${movieName} is succefully booked`);
+//     cb(`the movie ${movieName} is successfully booked`);
 // },2000)
 
 //  getName("Bhavesh Purswani", function(msg) {
@@ -73,10 +73,12 @@ async function result() {
     console.log(msg3);
 
     // console.log(msg1, msg2, msg3);
-} catch (error) {
-    console.log(error);
-}
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 result();
+
+console.log(result() instanceof Promise);
 console.log("the second line");
